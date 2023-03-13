@@ -1,7 +1,39 @@
+<?php
+session_start();
+$name = $tym = $message = $email = $phone = $pid = "";
+$err = [];
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=contact_form", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+
+if(isset($_POST['name'])){
+  $name = $_POST['name'];
+}
+
+echo "<pre>";
+   print_r($name);
+echo "</pre>";
+
+if(isset($_POST['name']) && !empty($_POST['name'])){
+  $name = $_POST['name'];
+}else{
+  $err['name'] = "Name is Required";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
  <!--devstart-->
-<script>
+<!-- <script>
   let projectname = "kumarprospera"
   function autoRefreshPage() {
     fetch('http://dashboards.anarockdigital.com/api/v0/lastupdated?project='+projectname, {
@@ -27,7 +59,7 @@
     setInterval(autoRefreshPage,3000)
   }
   document.head.appendChild(b)
-</script>
+</script> -->
 <!--devend-->
 <!--prod!!!
   <base href="https://dpgvclkvnnsee.cloudfront.net/microsites/kumarprospera/" />
@@ -83,5 +115,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    
   </div>
 	
+
+
+
+
 </body>
 </html>
