@@ -165,7 +165,7 @@ function HomeSlider() {
       pagdots = ['1', '2', '3'],
       interleaveOffset = 0.5;
   var mainSliderOptions = {
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
     allowTouchMove: false,
     speed: 3000,

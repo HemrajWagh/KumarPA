@@ -61,7 +61,7 @@ font-family: 'Myriad Pro';
 .overview1
 {
   font-weight:600;
-  padding:10px
+  padding:5px
 }
 .residences
 {
@@ -1451,7 +1451,7 @@ margin-top: 3em;
 #gallery-carousel1 img {
 width: 100%;
 display: block;
-border-radius: 10px 50px;
+border-radius: 5px 30px;
 }
 
 .gallerySlider {
