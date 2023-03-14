@@ -2389,3 +2389,22 @@ font-size: 1.2rem;
 .sec-location .location-para .title2 {
 color: #fff
 }
+
+
+.title2 :before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #424242;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+#bottom-form {
+display: none;
+}

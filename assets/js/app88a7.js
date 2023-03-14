@@ -55,10 +55,10 @@ function PageLoad() {
     ease: Expo.easeInOut
   });
   TweenMax.from(".logo", 1, {
-    delay: 2.6,
-    alpha: 0,
-    y: 20,
-    ease: Expo.easeInOut
+    // delay: 2.6,
+    // alpha: 0,
+    // y: 20,
+    // ease: Expo.easeInOut
   });
   TweenMax.from(".bannerTxt .bannerTxt1", 1, {
     delay: 3.2,
@@ -99,11 +99,12 @@ function PageLoad() {
 
   if ($(window).width() > 800) {
     TweenMax.staggerFrom("nav li", 1, {
-      delay: 2.8,
-      alpha: 0,
-      y: 20,
-      ease: Power3.easeInOut
+      // delay: 2.8,
+      // alpha: 0,
+      // y: 20,
+      // ease: Power3.easeInOut
     }, 0.08);
+  
     TweenMax.from(".sec-eq", 1, {
       delay: 4.4,
       alpha: 0,
