@@ -1037,8 +1037,8 @@ margin-right: 5px;
 header .right {
 display: flex;
 align-items: center;
-position: relative;
-left: 100px;
+/*position: relative;*/
+/*left: 50px;*/
 }
 
 .sec-banner {
@@ -2407,4 +2407,35 @@ color: #fff
 
 #bottom-form {
 display: none;
+
 }
+
+ #parallex{
+     height: 30vh;
+     /*background-color: red;*/
+    /*background-image:url(images/PST_Stories3_1500x1080.jpg);*/
+   background-attachment: fixed !important;
+   background-position: 70% 0;
+   background-repeat: no-repeat;
+   background-size: cover !important;
+ }
+
+ #parallex2{
+ height: 85vh;
+ /*opacity: .9;*/
+ /*background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));*/
+     /*background-color: red;*/
+    /*background-image:url(images/PST_Stories3_1500x1080.jpg);*/
+   background-attachment: fixed !important;
+   background-position: 70% 0;
+   background-repeat: no-repeat;
+   background-size: cover !important;
+ }
+
+ @media(max-width: 420px)
+ {
+     #parallex2{
+     height: 100vh;
+     }
+
+ }
